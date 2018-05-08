@@ -98,20 +98,32 @@ textarea {
    ========================================================================== */
 
 
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:white !important;
+}
+.dropdown-toggle {
+    color:white !important;
+}
 
+.container {
+    position:relative;
+}
+.float-left {
+    position:absolute;
+    top:20px;
+    left:50px;
+    display:block;
+}
+.float-left li{
 
+    float:left;
+    padding-right:30px;
+    list-style:none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.active {
+    display:block;
+}
 
 /* ==========================================================================
    Helper classes
