@@ -96,34 +96,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+a {
+    text-decoration:none !important;
+    color:black !important;
+}
+.nav-item {
+    padding:0 30px;
+}
 
-
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color:white !important;
 }
+
 .dropdown-toggle {
     color:white !important;
 }
 
-.container {
-    position:relative;
-}
-.float-left {
-    position:absolute;
-    top:20px;
-    left:50px;
-    display:block;
-}
-.float-left li{
+.expanded-menu {
 
-    float:left;
+    position:relative;
+    width:80%;
+    margin-top:30px;
+}
+.flot-left {
+    position:absolute;
+    left:40%;
+    right:auto;    
+    display:none;
+}
+
+.flot-left li{
+
+    display:inline-block;
     padding-right:30px;
     list-style:none;
 }
-
 .active {
-    display:block;
+    display:inline-block !important;
 }
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: pink;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  color: pink;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  color: pink;
+}
+input:-moz-placeholder { /* Firefox 18- */
+  color: pink;
+}
+
 
 /* ==========================================================================
    Helper classes

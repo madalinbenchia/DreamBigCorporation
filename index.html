@@ -41,105 +41,80 @@
             <a class="nav-link" href="#">What do I need? <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               More Clients
             </a>
-          <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">SEO</a>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-          </div>
+
           </li>
            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               New Look
             </a>
-          <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">SEO</a>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-          </div>
           </li>
+
            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              Applications
             </a>
-          <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">SEO</a>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-          </div>
-          </li>
+           </li>
+
            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Hosting
             </a>
-          <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">SEO</a>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-          </div>
-          </li>
+           </li>
+
            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Custom Hardware
             </a>
-          <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">SEO</a>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-            <a class="dropdown-item" href="#">Instagram</a>
-          </div>
-          </li>
+           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
         </form>
        </div>
      </nav>
 
      <div class="container">
-      <div class="float-left">
-        <ul>
-          <li>SEO</li>
-          <li>Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-        </ul>
+      <!--SubMenu -->
+      <div class="expanded-menu">
+        <div class="flot-left">
+          <ul>
+            <li>
+              <img src="img/icon/seo.png" width="20px" height="20px">
+              <a href="#">SEO</a>
+            </li>
+
+            <li>
+              <img src="img/icon/facebook.jpg" width="20px" height="20px">
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <img src="img/icon/insta.png" width="25px" height="20px">
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <img src="img/icon/twitter.png" width="20px" height="17px">
+              <a href="#">Twitter</a>
+            </li>
+          </ul>
+        </div>
       </div>
-     </div>
+
+      <!-- Optimizarea SEO -->
+      <div class="jumbotron">
+        <img src="img/seo-img.png">
+      </div>
+    </div>
 
 
 
   <!-- Script load -->
   <script>
-    // Add a clear div to allow adding background color to main-menu
-    $(".main-menu").append("<div class='clear'></div>");
-
-    // Make the first class selected
-    $(".main-menu > li:first").addClass("selected");
-
-    // Switch the selected class
-    $(".main-menu > li").click(function() {
-        $(".selected").removeClass("selected");
-        $(this).addClass("selected");
+        $(".nav-link").click(function() {
+        $(".flot-left").fadeToggle(500);
     });
-
-    // Disable menu links
-    $(".dropdown-menu").click(function() {
-        $(".float-left").addClass("active");
-    });
-
 </script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
